@@ -1,7 +1,7 @@
 import React from 'react';
-import './css/Card.css';
+import '../css/Card.css';
 
-const Card = ({ id, name, email}) => {
+const Card = ({ id, name, email }) => {
   return (
     <div className="card-container">
       <img src={`https://robohash.org/${id}?200x200`} alt='Robot' />
