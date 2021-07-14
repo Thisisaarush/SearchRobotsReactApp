@@ -1,25 +1,53 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import CardList from './CardList';
+import './css/App.css';
+import SearchBox from './searchBox';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+class App extends React.Component {
+
+  constructor() {
+    super();
+    this.state = {
+      robots: [],
+      searchField: '',
+    }
+  }
+
+  componentDidMount() {
+    fetch('https://jsonplaceholder.typicode.com/users')
+    .then(response => {
+      return response.json();
+    })
+    .then(users => {
+      this.setState({
+        robots: users,
+      });
+    })
+  }
+
+  onSearchChange = (e) => {
+    this.setState({searchField: e.target.value});
+  }
+
+
+  render () {
+
+    const filteredResult = this.state.robots.filter(robot => {
+      return robot.name.toLowerCase().includes(this.state.searchField.toLowerCase());
+    })
+
+    return (
+      <div>
+        <div className='header-container'>
+          <h1 id='header-title'>Chitti Friends</h1>
+          <SearchBox searchChange={this.onSearchChange} />
+        </div>
+        <CardList robots={ filteredResult }/>
+      </div>
+    );
+  }
+  
 }
-
 export default App;
