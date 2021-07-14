@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/SearchRobotsReactApp/static/css/main.d4027d97.chunk.css",
+    "main.js": "/SearchRobotsReactApp/static/js/main.fcc31937.chunk.js",
+    "main.js.map": "/SearchRobotsReactApp/static/js/main.fcc31937.chunk.js.map",
+    "runtime-main.js": "/SearchRobotsReactApp/static/js/runtime-main.f717e063.js",
+    "runtime-main.js.map": "/SearchRobotsReactApp/static/js/runtime-main.f717e063.js.map",
+    "static/js/2.2b2baaeb.chunk.js": "/SearchRobotsReactApp/static/js/2.2b2baaeb.chunk.js",
+    "static/js/2.2b2baaeb.chunk.js.map": "/SearchRobotsReactApp/static/js/2.2b2baaeb.chunk.js.map",
+    "static/js/3.176b7c63.chunk.js": "/SearchRobotsReactApp/static/js/3.176b7c63.chunk.js",
+    "static/js/3.176b7c63.chunk.js.map": "/SearchRobotsReactApp/static/js/3.176b7c63.chunk.js.map",
+    "index.html": "/SearchRobotsReactApp/index.html",
+    "static/css/main.d4027d97.chunk.css.map": "/SearchRobotsReactApp/static/css/main.d4027d97.chunk.css.map",
+    "static/js/2.2b2baaeb.chunk.js.LICENSE.txt": "/SearchRobotsReactApp/static/js/2.2b2baaeb.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f717e063.js",
+    "static/js/2.2b2baaeb.chunk.js",
+    "static/css/main.d4027d97.chunk.css",
+    "static/js/main.fcc31937.chunk.js"
+  ]
+}
